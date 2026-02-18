@@ -1,0 +1,21 @@
+Categoría,Variable,Descripción Técnica
+Identificación,Id Cancion,Identificador único global de Spotify para cada pista musical.
+Identificación,Nombre Cancion,Título oficial de la obra musical.
+Identificación,Artistas,Nombre del artista o lista de artistas que colaboran (separados por ;).
+Identificación,Nombre Album,Título del álbum en el que se incluye la canción.
+Identificación,Genero,Clasificación del género musical principal asignado a la pista.
+Contexto,Explicita,Indicador (Booleano) que señala si la letra contiene lenguaje para adultos.
+Rendimiento,Popularidad,Índice numérico (0-100) basado en reproducciones totales y actualidad.
+Estructura,Duracion ms,Longitud de la pista medida en milisegundos.
+Estructura,Ritmo BPM,Tempo estimado de la canción en pulsaciones por minuto (Beats Per Minute).
+Estructura,Compas,Estimación del número de pulsos en cada compás (firma de tiempo).
+Estructura,Tonalidad,"La escala o clave en la que está escrita la canción (ej. Do, Re, Sol)."
+Estructura,Modo Musical,Indica la modalidad (Mayor o Menor) asociada al sentimiento de la pista.
+Audio,Bailabilidad,Describe qué tan adecuada es una pista para bailar según su ritmo y pulso.
+Audio,Energía,Medida de intensidad; indica qué tan rápida y ruidosa se percibe la pista.
+Audio,Volumen dB,El volumen general de la pista medido en decibelios promedio.
+Audio,Presencia Voz,Detecta palabras habladas. Valores altos indican contenido tipo rap o podcast.
+Audio,Acústica,Nivel de confianza sobre el uso de instrumentos no electrónicos.
+Audio,Instrumentalidad,Predice la ausencia de voces en la pista.
+Audio,En Vivo,Detecta si la grabación corresponde a un concierto con audiencia.
+Audio,Positividad,"Describe la ""alegría"" musical: valores altos indican felicidad y bajos tristeza."
