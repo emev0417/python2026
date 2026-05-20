@@ -1,0 +1,88 @@
+body {
+    /* Ponemos el tipo de letra del documento HTML */
+    font-family: Arial, sans-serif;
+    /* Background me permite poner el color del fondo (un gris clínico muy suave) */
+    background: #f4f7f6;
+    /* Padding me permite configurar los espacios internos generales */
+    padding: 40px;
+}
+
+/* ESTILOS AL DIV CONTENEDOR O CLASE CONTAINER */
+.container {
+    /* Anchura un poquito mayor para que los textos médicos quepan cómodamente */
+    width: 420px;
+    /* Centramos el contenido en la pantalla */
+    margin: auto;
+    background: white;
+    padding: 30px;
+    /* Borde redondeado */
+    border-radius: 10px;
+    /* Una pequeña sombra sutil para darle relieve y modernidad */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos para los títulos */
+h2 {
+    color: #2c3e50; /* Un color azul muy oscuro, casi gris, muy elegante */
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #7f8c8d;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* NUEVO: Estilos para las etiquetas (labels) de las variables */
+label {
+    display: block;      /* Hace que el texto ocupe toda su línea */
+    margin-top: 15px;    /* Separa la etiqueta del input anterior */
+    font-weight: bold;   /* Hace que el texto resalte en negrita */
+    color: #34495e;      /* Color gris oscuro profesional */
+    font-size: 14px;
+}
+
+/* Estilos para los inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;     /* Espacio corto justo abajo de su propia etiqueta */
+    border: 1px solid #cccccc; /* Un borde gris suave */
+    border-radius: 5px;  /* Bordes de las casillas ligeramente redondeados */
+    
+    /* ¡TRUCO CLAVE!: Evita que las casillas se salgan del container por culpa del padding */
+    box-sizing: border-box; 
+}
+
+/* Estilos de botón (Estilo médico/cardíaco) */
+button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: #e74c3c; /* Color rojo cardíaco */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Hace que el cambio de color al pasar el mouse sea suave */
+}
+
+/* Efecto cuando pasas el mouse por encima del botón */
+button:hover {
+    background-color: #c0392b; /* Un rojo un poco más oscuro */
+}
+
+/* Contenedor del resultado de Jinja2 */
+.resultado {
+    margin-top: 25px;
+    background: #d4edda; /* Fondo verde claro de éxito */
+    color: #155724;      /* Texto verde oscuro para que contraste bien */
+    padding: 15px;
+    border-radius: 5px;
+    /* Una pequeña línea verde fuerte al lado izquierdo para mejorar el diseño */
+    border-left: 5px solid #28a745; 
+}
