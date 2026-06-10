@@ -1,0 +1,42 @@
+body{
+    /*Ponemos el tipo de letra del documento html*/
+    font-family: Arial;
+    /*Background me permite poner el color del fondo*/
+    background: #f4f4f4;
+    /*Padding me permite configurar los espacios internos*/
+    padding:40px;
+}
+/*Estilos al div contenedor o clase container*/
+.container{
+    /*Anchura de 400px*/
+    width: 400px;
+    /*Centramos el contenido*/
+    margin: auto;
+    background: white;
+    padding: 30px;
+    /*Borde redondeado*/
+    border-radius: 10px;
+}
+/*Estilos para los inputs*/
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+/*Estilos para el boton*/
+button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.resultado{
+    margin-top: 20px;
+    background: #d4edda;
+    padding: 15px;
+    border-radius: 5px;
+}

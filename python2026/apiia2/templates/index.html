@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/estilos/estilos.css">
+    <title>Predicción de Riesgo Cardíaco</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Detección de Enfermedades Cardíacas</h2>
+        <p>Ingrese los datos clínicos del paciente para evaluar el riesgo:</p>
+        
+        <form action="/predict" method="post">
+            
+            <label for="age">Edad del paciente:</label>
+            <input type="number" name="age" id="age" placeholder="Ej. 45" required>
+            
+            <label for="trestbps">Presión arterial en reposo (trestbps en mm Hg):</label>
+            <input step="any" type="number" name="trestbps" id="trestbps" placeholder="Ej. 130" required>
+            
+            <label for="chol">Colesterol sérico (chol en mg/dl):</label>
+            <input step="any" type="number" name="chol" id="chol" placeholder="Ej. 234" required>
+            
+            <label for="thalach">Frecuencia cardíaca máxima (thalach):</label>
+            <input step="any" type="number" name="thalach" id="thalach" placeholder="Ej. 150" required>
+            
+            <button type="submit">Evaluar Paciente</button>
+
+        </form>
+        
+        {% if resultado != None %}
+        <div class="resultado">
+            <h3>Resultado del Análisis:</h3>
+            <p>
+                <strong>Diagnóstico:</strong> {{ resultado }}
+                <br>
+                <strong>Mensaje del sistema:</strong> {{ mensaje }}
+            </p>
+        </div>
+        {% endif %}
+    </div> 
+</body>
+
+</html>

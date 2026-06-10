@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nos enlazamos a los estilos css-->
+    <link rel="stylesheet" href="/static/estilos/estilos.css">
+    <title>Prediccion ML</title>
+</head>
+
+<body>
+    <!--Inicio del container-->
+    <div class="container">
+        <h2>Predicción Machine Learnig</h2>
+        <!--Creo un formulario-->
+        <form action="/predict" method="post">
+            <input step="any" type="number" name="atributo1" id="atributo1" placeholder="Ingrese el tamaño del sepalo" required>
+            <input step="any" type="number" name="atributo2" id="atributo2" placeholder="Ingrese la anchura del sepalo" required>
+            <input step="any" type="number" name="atributo3" id="atributo3" placeholder="Ingrese el tamaño del petalo" required>
+            <input step="any" type="number" name="atributo4" id="atributo4" placeholder="Ingrese la anchura del petalo" required>
+            <button type="submit">Predecir</button>
+        </form>
+
+        <!--Inicio container resultado-->
+        {% if resultado != None %}
+        <div class="resultado">
+            <h3>Resultado:</h3>
+            <p>
+                Predicción : {{resultado}}
+                <br>
+                Mensaje : {{mensaje}}
+            </p>
+
+        </div>
+        {% endif %}
+    </div>
+    <!--Fin del container-->
+
+</body>
+
+</html>
